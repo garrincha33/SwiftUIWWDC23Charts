@@ -11,7 +11,6 @@ struct Home: View {
     @State private var graphType: GraphType = .donut
     
     var body: some View {
-        
         VStack {
             ///Segmented Picker
             Picker("", selection: $graphType) {
@@ -19,7 +18,14 @@ struct Home: View {
                     Text(type.rawValue).tag(type)
                 }
             }
+            .pickerStyle(.segmented)
+            .labelsHidden()
+            
+            ///charts
+            
+            Spacer()
         }
+        .padding()
     }
 }
 
