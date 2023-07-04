@@ -11,6 +11,7 @@
 		8268ED202A544BCC00B74058 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8268ED1F2A544BCC00B74058 /* ContentView.swift */; };
 		8268ED222A544BCE00B74058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8268ED212A544BCE00B74058 /* Assets.xcassets */; };
 		8268ED252A544BCE00B74058 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8268ED242A544BCE00B74058 /* Preview Assets.xcassets */; };
+		8268ED2D2A544DB000B74058 /* AppDownloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8268ED2C2A544DB000B74058 /* AppDownloads.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		8268ED1F2A544BCC00B74058 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8268ED212A544BCE00B74058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8268ED242A544BCE00B74058 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8268ED2C2A544DB000B74058 /* AppDownloads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDownloads.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		8268ED1C2A544BCC00B74058 /* SwiftUIWWDCCharts */ = {
 			isa = PBXGroup;
 			children = (
+				8268ED2B2A544DA600B74058 /* Model */,
 				8268ED1D2A544BCC00B74058 /* SwiftUIWWDCChartsApp.swift */,
 				8268ED1F2A544BCC00B74058 /* ContentView.swift */,
 				8268ED212A544BCE00B74058 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				8268ED242A544BCE00B74058 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8268ED2B2A544DA600B74058 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8268ED2C2A544DB000B74058 /* AppDownloads.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8268ED202A544BCC00B74058 /* ContentView.swift in Sources */,
+				8268ED2D2A544DB000B74058 /* AppDownloads.swift in Sources */,
 				8268ED1E2A544BCC00B74058 /* SwiftUIWWDCChartsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
