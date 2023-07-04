@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Charts
 
 struct Home: View {
     @State private var graphType: GraphType = .donut
@@ -22,8 +23,25 @@ struct Home: View {
             .labelsHidden()
             
             ///charts
-            
-            Spacer()
+            Chart {
+                ForEach(appDownloads) { download in
+                    if graphType == .bar {
+                        ///Bar Chart
+                    } else {
+                        ///new swiftUI API SectorMark
+                        SectorMark(
+                            angle: .value("Downloads", download.downloads),
+                            angularInset: graphType == .donut ? 2 : 8
+                            
+                        )
+                        .cornerRadius(8)
+                        .foregroundStyle(by: .value("Month", download.month))
+                    }
+                }
+            }
+            .frame(height: 300)
+            .padding(.top, 20)
+            Spacer(minLength: 0)
         }
         .padding()
     }

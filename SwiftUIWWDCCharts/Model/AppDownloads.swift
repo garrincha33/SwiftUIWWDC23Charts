@@ -41,12 +41,12 @@ extension [AppDownloads] {
 var appDownloads: [AppDownloads] = [
 
     .init(date: .createDate(1, 1, 2023), downloads: 2500),
-    .init(date: .createDate(1, 1, 2023), downloads: 3500),
-    .init(date: .createDate(1, 1, 2023), downloads: 5500),
-    .init(date: .createDate(1, 1, 2023), downloads: 7200),
-    .init(date: .createDate(1, 1, 2023), downloads: 7800),
-    .init(date: .createDate(1, 1, 2023), downloads: 8500),
-    .init(date: .createDate(1, 1, 2023), downloads: 9500)
+    .init(date: .createDate(2, 1, 2023), downloads: 3500),
+    .init(date: .createDate(1, 30, 2023), downloads: 5500),
+    .init(date: .createDate(4, 12, 2023), downloads: 7200),
+    .init(date: .createDate(2, 8, 2023), downloads: 7800),
+    .init(date: .createDate(11, 11, 2023), downloads: 8500),
+    .init(date: .createDate(12, 1, 2023), downloads: 9500)
 
 ]
 
